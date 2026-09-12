@@ -1,5 +1,9 @@
+const configuredApiUrl = import.meta.env.VITE_API_URL;
 const API_BASE_URL = (
-  import.meta.env.VITE_API_URL || "/api"
+  configuredApiUrl ||
+  (import.meta.env.PROD
+    ? "https://life-rpg-backend-saw4.onrender.com"
+    : "/api")
 ).replace(/\/$/, "");
 
 export function apiUrl(path) {
