@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Vite build output
+dist/
+
+# Local environment files (keep the example tracked)
+.env
+.env.*
+!.env.example
+
+# Runtime logs
+*.log
+npm-debug.log*
+
+# Local SQLite data
+*.db
+*.db-shm
+*.db-wal
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
